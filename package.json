@@ -19,8 +19,8 @@
     "@types/node": "10.17.27",
     "aws-cdk": "1.103.0",
     "fantasy-name-generator": "2.0.0",
-    "jest": "26.6.3",
-    "ts-jest": "26.5.6",
+    "jest": "27.2.5",
+    "ts-jest": "27.0.5",
     "ts-node": "9.1.1",
     "typescript": "3.9.9"
   },
