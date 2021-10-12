@@ -30,7 +30,7 @@
     "@aws/dynamodb-data-mapper": "0.7.3",
     "@aws/dynamodb-data-mapper-annotations": "0.7.3",
     "aws-sdk": "2.905.0",
-    "short-uuid": "4.1.0",
+    "short-uuid": "4.2.0",
     "source-map-support": "0.5.19"
   }
 }
