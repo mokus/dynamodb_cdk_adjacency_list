@@ -23,8 +23,14 @@ export class ChatRoomsStack extends Stack {
                 billingMode: BillingMode.PAY_PER_REQUEST
             }
         );
+        this.createIndex(chatRooms, ChatRoomsTable.UserRoomsIndex);
+
+
+    }
+
+    private createIndex(chatRooms: Table, indexName: string) {
         chatRooms.addGlobalSecondaryIndex({
-            indexName: ChatRoomsTable.UserRoomsIndex,
+            indexName: indexName,
             partitionKey: {
                 name: ChatRoomsTable.SortKey,
                 type: AttributeType.STRING
@@ -34,7 +40,5 @@ export class ChatRoomsStack extends Stack {
                 type: AttributeType.STRING
             }
         })
-
-
     }
 }
